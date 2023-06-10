@@ -1,0 +1,34 @@
+.wrapper{
+position: absolute;
+left:50%;
+transform: translate(-50%)
+
+}
+body{
+    background-color: #2e2e2e;
+    font-family: 'Calibri';
+}
+.container{
+    background-color:#fff;
+    padding: 15px 30px 15px 30px;
+    margin-bottom:10px;
+}
+.question{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.icon{
+    margin-right:20px
+}
+.answer{
+    transition: 0.9s;
+    max-height:0;
+    overflow:hidden;
+}
+.answer.active{
+    max-height:400px;
+}
+.icon.active{
+    transform:rotate(180deg)
+}
